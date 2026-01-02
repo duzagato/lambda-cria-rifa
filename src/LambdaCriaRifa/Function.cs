@@ -78,6 +78,10 @@ public class Function
 
         var batchItemFailures = new List<SQSBatchResponse.BatchItemFailure>();
 
+        // Create cancellation token from remaining time
+        using var cts = new CancellationTokenSource(context.RemainingTime.Subtract(TimeSpan.FromSeconds(1)));
+        var cancellationToken = cts.Token;
+
         foreach (var record in sqsEvent.Records)
         {
             try
@@ -111,7 +115,7 @@ public class Function
                 // Process the lottery creation
                 using var scope = _serviceProvider.CreateScope();
                 var lotteryService = scope.ServiceProvider.GetRequiredService<ILotteryService>();
-                await lotteryService.CreateLotteryAsync(request);
+                await lotteryService.CreateLotteryAsync(request, cancellationToken);
 
                 _logger.LogInformation("Successfully processed message with ID: {MessageId}", record.MessageId);
             }
