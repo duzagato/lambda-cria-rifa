@@ -1,0 +1,14 @@
+C:\Users\Eduardo Zagato Junio\Projetos\lambda-cria-rifa\src\LambdaCriaRifa\bin\Debug\net8.0\appsettings.json
+C:\Users\Eduardo Zagato Junio\Projetos\lambda-cria-rifa\src\LambdaCriaRifa\bin\Debug\net8.0\LambdaCriaRifa.deps.json
+C:\Users\Eduardo Zagato Junio\Projetos\lambda-cria-rifa\src\LambdaCriaRifa\bin\Debug\net8.0\LambdaCriaRifa.dll
+C:\Users\Eduardo Zagato Junio\Projetos\lambda-cria-rifa\src\LambdaCriaRifa\bin\Debug\net8.0\LambdaCriaRifa.pdb
+C:\Users\Eduardo Zagato Junio\Projetos\lambda-cria-rifa\src\LambdaCriaRifa\obj\Debug\net8.0\LambdaCriaRifa.csproj.AssemblyReference.cache
+C:\Users\Eduardo Zagato Junio\Projetos\lambda-cria-rifa\src\LambdaCriaRifa\obj\Debug\net8.0\LambdaCriaRifa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eduardo Zagato Junio\Projetos\lambda-cria-rifa\src\LambdaCriaRifa\obj\Debug\net8.0\LambdaCriaRifa.AssemblyInfoInputs.cache
+C:\Users\Eduardo Zagato Junio\Projetos\lambda-cria-rifa\src\LambdaCriaRifa\obj\Debug\net8.0\LambdaCriaRifa.AssemblyInfo.cs
+C:\Users\Eduardo Zagato Junio\Projetos\lambda-cria-rifa\src\LambdaCriaRifa\obj\Debug\net8.0\LambdaCriaRifa.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo Zagato Junio\Projetos\lambda-cria-rifa\src\LambdaCriaRifa\obj\Debug\net8.0\LambdaCriaRifa.sourcelink.json
+C:\Users\Eduardo Zagato Junio\Projetos\lambda-cria-rifa\src\LambdaCriaRifa\obj\Debug\net8.0\LambdaCriaRifa.dll
+C:\Users\Eduardo Zagato Junio\Projetos\lambda-cria-rifa\src\LambdaCriaRifa\obj\Debug\net8.0\refint\LambdaCriaRifa.dll
+C:\Users\Eduardo Zagato Junio\Projetos\lambda-cria-rifa\src\LambdaCriaRifa\obj\Debug\net8.0\LambdaCriaRifa.pdb
+C:\Users\Eduardo Zagato Junio\Projetos\lambda-cria-rifa\src\LambdaCriaRifa\obj\Debug\net8.0\ref\LambdaCriaRifa.dll
