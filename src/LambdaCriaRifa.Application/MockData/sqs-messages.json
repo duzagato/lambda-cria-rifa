@@ -1,0 +1,14 @@
+[
+  {
+    "messageId": "msg-001",
+    "body": "{\"titulo\":\"Rifa Notebook Dell\",\"descricao\":\"Rifa de um notebook Dell Inspiron 15 novinho\",\"valorBilhete\":10.50,\"quantidadeBilhetes\":100,\"dataSorteio\":\"2026-02-15T20:00:00Z\",\"criadoPor\":\"admin@exemplo.com\"}"
+  },
+  {
+    "messageId": "msg-002",
+    "body": "{\"titulo\":\"Rifa Smartphone Samsung\",\"descricao\":\"Samsung Galaxy S24 Ultra 256GB\",\"valorBilhete\":15.00,\"quantidadeBilhetes\":150,\"dataSorteio\":\"2026-03-01T19:00:00Z\",\"criadoPor\":\"vendedor@exemplo.com\"}"
+  },
+  {
+    "messageId": "msg-003",
+    "body": "{\"titulo\":\"Rifa Bicicleta Mountain Bike\",\"descricao\":\"Bicicleta mountain bike aro 29, 21 marchas\",\"valorBilhete\":5.00,\"quantidadeBilhetes\":200,\"dataSorteio\":\"2026-02-28T18:00:00Z\",\"criadoPor\":\"esportes@exemplo.com\"}"
+  }
+]
