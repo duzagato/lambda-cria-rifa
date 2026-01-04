@@ -33,7 +33,9 @@ public abstract class BaseRepository<T> : IBaseRepository<T> where T : class
             _schema = "public";
         }
 
-        _idColumnName = "Id";
+        // Try to find Id property in the entity type
+        var idProperty = typeof(T).GetProperty("Id");
+        _idColumnName = idProperty?.Name ?? "Id";
     }
 
     public virtual async Task<T?> SelectById(Guid? id)
@@ -86,7 +88,7 @@ public abstract class BaseRepository<T> : IBaseRepository<T> where T : class
         return await _connection.ExecuteScalarAsync<int>(query, new { Id = id });
     }
 
-    public virtual async Task IdExists(Guid? id)
+    public virtual async Task EnsureIdExists(Guid? id)
     {
         if (id == null)
         {

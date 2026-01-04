@@ -10,5 +10,5 @@ public interface IBaseRepository<T> where T : class
     Task Update(DTO dto);
     Task DeleteById(Guid id);
     Task<int> SelectCountById(Guid id);
-    Task IdExists(Guid? id);
+    Task EnsureIdExists(Guid? id);
 }
