@@ -35,7 +35,11 @@ public abstract class BaseRepository<T> : IBaseRepository<T> where T : class
 
         // Try to find Id property in the entity type
         var idProperty = typeof(T).GetProperty("Id");
-        _idColumnName = idProperty?.Name ?? "Id";
+        if (idProperty == null)
+        {
+            throw new InvalidOperationException($"Entity type {typeof(T).Name} must have an 'Id' property");
+        }
+        _idColumnName = idProperty.Name;
     }
 
     public virtual async Task<T?> SelectById(Guid? id)
