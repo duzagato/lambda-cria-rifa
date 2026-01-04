@@ -63,6 +63,13 @@ public abstract class BaseRepository<T> : IBaseRepository<T> where T : class
         var properties = dto.GetProperties(_idColumnName);
         var setClause = string.Join(", ", properties.Select(p => $"{StringHelper.PascalToSnakeCase(p.Name)} = @{p.Name}"));
 
+        // Get the Id property from the DTO type
+        var idProperty = dto.GetType().GetProperty(_idColumnName);
+        if (idProperty == null)
+        {
+            throw new InvalidOperationException($"DTO must have an {_idColumnName} property for Update operation");
+        }
+
         var query = $"UPDATE {_schema}.{_tableName} SET {setClause} WHERE {StringHelper.PascalToSnakeCase(_idColumnName)} = @{_idColumnName}";
         await _connection.ExecuteAsync(query, dto);
     }
